@@ -41,7 +41,7 @@ void triggerTriggered(String str) {
 
 void configUpdatedMain(String key)
 {
-  if (key == "speed") {
+  if (key == "power") {
     int power = config["power"].as<int>();
     analogWrite(pinMosfet, power);
     isRunning = power > 0;
